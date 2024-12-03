@@ -1,0 +1,239 @@
+/* Variables globales */
+:root {
+  --color-primary: #5300c8;
+  --color-secondary: #6bcb77;
+  --color-accent: #ffa36c;
+  --color-highlight: #ffd93d;
+  --color-danger: #ff6b6b;
+  --color-white: #ffffff;
+  --color-light-gray: #f9f9f9;
+  --color-dark-gray: #333;
+
+  --border-radius: 8px;
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition-speed: 0.3s;
+
+  --font-primary: "Press Start 2P", system-ui;
+  --font-secondary: "IBM Plex Mono", serif;
+}
+
+/* Resets*/
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  line-height: 2;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: all 0.5s ease-out;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.85rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Bloque: header */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1rem;
+}
+
+header__title {
+  margin: 0.5rem 0;
+}
+
+/* Bloque: main */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main__section {
+  margin-bottom: 2rem;
+}
+
+/* Bloque: form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: var(--color-white);
+  padding: 1.5rem;
+  border: 2px solid var(--color-accent);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+form__label {
+  font-weight: bold;
+  color: var(--color-danger);
+}
+
+form__input,
+form__button {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 2px solid var(--color-highlight);
+  border-radius: var(--border-radius);
+}
+
+form__input:focus {
+  border-color: var(--color-secondary);
+  outline: none;
+  box-shadow: 0 0 5px rgba(107, 203, 119, 0.5);
+}
+
+form__button {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+form__button:hover {
+  background-color: var(--color-secondary);
+}
+
+/* Bloque: product-list */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.product-list__item {
+  background: var(--color-white);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.product-list__item--highlighted {
+  border-color: var(--color-primary);
+}
+
+.product-list__image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--color-highlight);
+}
+
+.product-list__title {
+  color: var(--color-danger);
+  margin: 0.5rem 0;
+}
+
+.product-list__price {
+  margin: 0.5rem 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  form {
+    padding: 1rem;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .product-list__image {
+    height: 120px;
+  }
+}
+/* Bloque: footer */
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.footer__text {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  font-family: var(--font-secondary);
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__link-item {
+}
+
+.footer__link {
+  color: var(--color-highlight);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color var(--transition-speed);
+}
+
+.footer__link:hover {
+  color: var(--color-secondary);
+}
