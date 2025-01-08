@@ -17,8 +17,7 @@
   --font-secondary: "IBM Plex Mono", serif;
 }
 
-/* Resets*/
-
+/* Resets */
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -37,6 +36,9 @@ body {
   line-height: 2;
   overflow-x: hidden;
   color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -84,6 +86,9 @@ img {
 p {
   line-height: 1.6;
 }
+ul {
+  padding: 0;
+}
 
 /* Bloque: header */
 header {
@@ -102,6 +107,7 @@ main {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+  flex: 1;
 }
 
 main__section {
@@ -187,26 +193,69 @@ form__button:hover {
   margin: 0.5rem 0;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-  form {
-    padding: 1rem;
-  }
-
-  .product-list {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .product-list__image {
-    height: 120px;
-  }
+.product-card {
+  background: var(--color-white);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed),
+    box-shadow var (--transition-speed);
 }
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid var(--color-highlight);
+}
+
+.product-card__details {
+  padding: 1rem;
+}
+
+.product-card__title {
+  color: var(--color-primary);
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.product-card__price {
+  color: var(--color-secondary);
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.product-card__button {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.product-card__button:hover {
+  background-color: var(--color-highlight);
+}
+
 /* Bloque: footer */
 .footer {
   background-color: var(--color-primary);
   color: var(--color-white);
   text-align: center;
   padding: 1.5rem 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  line-height: 1;
 }
 
 .footer__text {
@@ -236,4 +285,173 @@ form__button:hover {
 
 .footer__link:hover {
   color: var(--color-secondary);
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .header {
+    text-align: center;
+  }
+
+  .header img {
+    width: 200px;
+  }
+
+  .header__title {
+    font-size: 2.5rem;
+  }
+
+  .main__section--catalog {
+    padding: 10px;
+  }
+
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card__details {
+    text-align: center;
+  }
+
+  .form {
+    padding: 10px;
+  }
+
+  .form__label,
+  .form__input,
+  .form__button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__link-item {
+    margin-bottom: 10px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__section--form {
+    order: 1;
+  }
+
+  .main__section--catalog {
+    order: 2;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    text-align: center;
+  }
+
+  .header img {
+    width: 250px;
+  }
+
+  .header__title {
+    font-size: 3rem;
+  }
+
+  .main__section--catalog {
+    padding: 20px;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .product-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .product-card__details {
+    text-align: center;
+  }
+
+  .form {
+    padding: 20px;
+  }
+
+  .form__label,
+  .form__input,
+  .form__button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .footer__links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__link-item {
+    margin-bottom: 15px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__section--form {
+    order: 1;
+  }
+
+  .main__section--catalog {
+    order: 2;
+  }
+}
+
+@media (min-width: 1025px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main__section--form {
+    order: 2;
+    width: 30%;
+  }
+
+  .main__section--catalog {
+    order: 1;
+    width: 65%;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
