@@ -23,7 +23,7 @@
 
   .product-card__image {
     width: 100%;
-    height: auto;
+    height: 30vh;
   }
 
   .product-card__details {
@@ -99,7 +99,7 @@
 
   .product-card__image {
     width: 100%;
-    height: auto;
+    height: 30vh;
   }
 
   .product-card__details {
@@ -154,7 +154,7 @@
 
   .main__section--form {
     order: 2;
-    width: 30%;
+    width: 35%;
   }
 
   .main__section--catalog {
@@ -165,6 +165,6 @@
   .product-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    gap: 1rem;
   }
 }

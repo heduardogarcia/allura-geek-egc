@@ -80,7 +80,6 @@ h6 {
 
 img {
   max-width: 100%;
-  height: auto;
 }
 
 p {
@@ -105,7 +104,7 @@ header__title {
 /* Bloque: main */
 main {
   padding: 2rem;
-  max-width: 1200px;
+  max-width: 1600px;
   margin: 0 auto;
   flex: 1;
 }
@@ -157,6 +156,31 @@ form__button:hover {
   background-color: var(--color-secondary);
 }
 
+/* Modifier styles for buttons */
+.button--add {
+  background-color: var(--color-secondary);
+}
+
+.button--add:hover {
+  background-color: var(--color-highlight);
+}
+
+.button--delete {
+  background-color: var(--color-danger);
+}
+
+.button--delete:hover {
+  background-color: var(--color-dark-gray);
+}
+
+.button--edit {
+  background-color: var(--color-accent);
+}
+
+.button--edit:hover {
+  background-color: var(--color-primary);
+}
+
 /* Bloque: product-list */
 .product-list {
   display: grid;
@@ -179,7 +203,7 @@ form__button:hover {
 
 .product-list__image {
   width: 100%;
-  height: 150px;
+  height: 100px;
   object-fit: cover;
   border-bottom: 2px solid var(--color-highlight);
 }
@@ -194,6 +218,7 @@ form__button:hover {
 }
 
 .product-card {
+  width: 310px;
   background: var(--color-white);
   border: 2px solid var(--color-accent);
   border-radius: var(--border-radius);
@@ -201,7 +226,7 @@ form__button:hover {
   text-align: center;
   box-shadow: var(--box-shadow);
   transition: transform var(--transition-speed),
-    box-shadow var (--transition-speed);
+    box-shadow var(--transition-speed);
 }
 
 .product-card:hover {
@@ -213,7 +238,7 @@ form__button:hover {
   width: 100%;
   height: 200px;
   object-fit: cover;
-  border-bottom: 2px solid var(--color-highlight);
+  object-position: center;
 }
 
 .product-card__details {
@@ -237,6 +262,7 @@ form__button:hover {
   color: var(--color-white);
   border: none;
   padding: 0.5rem 1rem;
+  margin: 0.5rem;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: background-color var(--transition-speed);
@@ -246,14 +272,27 @@ form__button:hover {
   background-color: var(--color-highlight);
 }
 
+.product-card__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+@media (min-width: 1025px) {
+  .product-card__buttons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
 /* Bloque: footer */
 .footer {
   background-color: var(--color-primary);
   color: var(--color-white);
   text-align: center;
   padding: 1.5rem 1rem;
-  position: fixed;
-  bottom: 0;
+  margin-top: 2rem;
   width: 100%;
   line-height: 1;
 }
@@ -277,7 +316,7 @@ form__button:hover {
 }
 
 .footer__link {
-  color: var(--color-highlight);
+  color: var (--color-highlight);
   text-decoration: none;
   font-size: 0.9rem;
   transition: color var(--transition-speed);
@@ -312,7 +351,9 @@ form__button:hover {
 
   .product-card__image {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
   }
 
   .product-card__details {
@@ -332,6 +373,7 @@ form__button:hover {
 
   .footer {
     text-align: center;
+    margin-top: 2rem;
   }
 
   .footer__links {
@@ -387,7 +429,9 @@ form__button:hover {
 
   .product-card__image {
     width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
   }
 
   .product-card__details {
@@ -407,6 +451,7 @@ form__button:hover {
 
   .footer {
     text-align: center;
+    margin-top: 2rem;
   }
 
   .footer__links {
@@ -437,11 +482,13 @@ form__button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .main__section--form {
     order: 2;
     width: 30%;
+    margin-right: 2rem;
   }
 
   .main__section--catalog {
@@ -453,5 +500,15 @@ form__button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+  }
+
+  .product-card__image {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .footer {
+    margin-top: 2rem;
   }
 }
