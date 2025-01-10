@@ -32,7 +32,7 @@
         <input class="form__input" type="number" id="precio" name="precio" required>
 
         <label class="form__label" for="imagen">Imagen del Producto:</label>
-        <input class="form__input" type="file" id="imagen" name="imagen" accept="image/*" required>
+        <input class="form__input" type="text" id="imagen" name="imagen" required>
 
         <button class="form__button button--add" type="submit">Agregar Producto</button>
       </form>
@@ -41,84 +41,7 @@
       <h2 class="main__title">Catálogo</h2>
       <ul class="product-list" id="productList">
 
-        <!-- Card de Producto -->
-        <li class="product-card">
-          <img src="/assets/img/producto-ejemplo.jpg" alt="Nombre del Producto" class="product-card__image">
-          <div class="product-card__details">
-            <h3 class="product-card__title">Nombre del Producto</h3>
-            <p class="product-card__price">$0.00</p>
-            <div class="product-card__buttons">
-              <button class="product-card__button button--delete">Eliminar</button>
-              <button class="product-card__button button--edit">Editar</button>
-            </div>
-          </div>
-        </li>
-        <!-- Fin del Card de Producto -->
-        <!-- Card de Producto -->
-        <li class="product-card">
-          <img src="/assets/img/producto-ejemplo.jpg" alt="Nombre del Producto" class="product-card__image">
-          <div class="product-card__details">
-            <h3 class="product-card__title">Nombre del Producto</h3>
-            <p class="product-card__price">$0.00</p>
-            <div class="product-card__buttons">
-              <button class="product-card__button button--delete">Eliminar</button>
-              <button class="product-card__button button--edit">Editar</button>
-            </div>
-          </div>
-        </li>
-        <!-- Fin del Card de Producto -->
-        <!-- Card de Producto -->
-        <li class="product-card">
-          <img src="/assets/img/producto-ejemplo.jpg" alt="Nombre del Producto" class="product-card__image">
-          <div class="product-card__details">
-            <h3 class="product-card__title">Nombre del Producto</h3>
-            <p class="product-card__price">$0.00</p>
-            <div class="product-card__buttons">
-              <button class="product-card__button button--delete">Eliminar</button>
-              <button class="product-card__button button--edit">Editar</button>
-            </div>
-          </div>
-        </li>
-        <!-- Fin del Card de Producto -->
-        <!-- Card de Producto -->
-        <li class="product-card">
-          <img src="/assets/img/producto-ejemplo.jpg" alt="Nombre del Producto" class="product-card__image">
-          <div class="product-card__details">
-            <h3 class="product-card__title">Nombre del Producto</h3>
-            <p class="product-card__price">$0.00</p>
-            <div class="product-card__buttons">
-              <button class="product-card__button button--delete">Eliminar</button>
-              <button class="product-card__button button--edit">Editar</button>
-            </div>
-          </div>
-        </li>
-        <!-- Fin del Card de Producto -->
-        <!-- Card de Producto -->
-        <li class="product-card">
-          <img src="/assets/img/producto-ejemplo.jpg" alt="Nombre del Producto" class="product-card__image">
-          <div class="product-card__details">
-            <h3 class="product-card__title">Nombre del Producto</h3>
-            <p class="product-card__price">$0.00</p>
-            <div class="product-card__buttons">
-              <button class="product-card__button button--delete">Eliminar</button>
-              <button class="product-card__button button--edit">Editar</button>
-            </div>
-          </div>
-        </li>
-        <!-- Fin del Card de Producto -->
-        <!-- Card de Producto -->
-        <li class="product-card">
-          <img src="/assets/img/producto-ejemplo.jpg" alt="Nombre del Producto" class="product-card__image">
-          <div class="product-card__details">
-            <h3 class="product-card__title">Nombre del Producto</h3>
-            <p class="product-card__price">$0.00</p>
-            <div class="product-card__buttons">
-              <button class="product-card__button button--delete">Eliminar</button>
-              <button class="product-card__button button--edit">Editar</button>
-            </div>
-          </div>
-        </li>
-        <!-- Fin del Card de Producto -->
+
       </ul>
     </section>
 
@@ -142,7 +65,8 @@
       </li>
     </ul>
   </footer>
-  <script src="/js/script.js"></script>
+  <script src="/js/mostrarProductos.js" type="module"></script>
+  <script src="/js/crearProducto.js" type="module"></script>
 </body>
 
 </html>

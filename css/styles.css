@@ -105,7 +105,7 @@ header__title {
 main {
   padding: 2rem;
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 0;
   flex: 1;
 }
 
@@ -276,7 +276,7 @@ form__button:hover {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @media (min-width: 1025px) {
