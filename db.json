@@ -14,25 +14,25 @@
     },
     {
       "id": 3,
-      "nombre": "Producto 2",
+      "nombre": "Producto 3",
       "precio": 200,
       "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
     },
     {
-      "id": 3,
-      "nombre": "Producto 2",
+      "id": 4,
+      "nombre": "Producto 4",
       "precio": 200,
       "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
     },
     {
-      "id": 3,
-      "nombre": "Producto 2",
+      "id": 5,
+      "nombre": "Producto 5",
       "precio": 200,
       "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
     },
     {
-      "id": 3,
-      "nombre": "Producto 2",
+      "id": 6,
+      "nombre": "Producto 6",
       "precio": 200,
       "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
     }
