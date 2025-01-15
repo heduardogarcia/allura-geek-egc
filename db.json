@@ -1,82 +1,58 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Producto 1",
-      "precio": 100,
-      "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_192:247,c_thumb,dpr_1.0,g_auto,w_200/car_lady_dog.jpg"
-    },
-    {
-      "id": 2,
+      "id": "2",
       "nombre": "Producto 2",
       "precio": 200,
       "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "Producto 3",
       "precio": 200,
       "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
     },
     {
-      "id": 4,
-      "nombre": "Producto 4",
-      "precio": 200,
-      "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
-    },
-    {
-      "id": 5,
-      "nombre": "Producto 5",
-      "precio": 200,
-      "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
-    },
-    {
-      "id": 6,
+      "id": "6",
       "nombre": "Producto 6",
       "precio": 200,
       "imagen": "https://res.cloudinary.com/idemo/image/upload/ar_355:247,c_fill,dpr_1.0,e_sharpen:200,g_faces,w_400/sofa_cat.jpg"
     },
     {
-      "id": 1736501197641,
+      "id": "1736501197641",
       "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
       "nombre": "Eduardo Garcia Camacho",
       "precio": "121"
     },
     {
-      "id": 1736502985395,
+      "id": "1736503828917",
       "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
-      "nombre": "2",
-      "precio": "1"
+      "nombre": "Eduardo ",
+      "precio": "1233"
     },
     {
-      "id": 1736503309073,
+      "id": "1736503828920",
+      "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
+      "nombre": "Eduardo ",
+      "precio": "1233"
+    },
+    {
+      "id": "1736503828920",
+      "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
+      "nombre": "Eduardo ",
+      "precio": "1233"
+    },
+    {
+      "id": "1736503828923",
+      "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
+      "nombre": "Eduardo ",
+      "precio": "1233"
+    },
+    {
+      "id": "1736929243708",
       "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
       "nombre": "Eduardo Garcia Camacho",
-      "precio": "111"
-    },
-    {
-      "id": 1736503828917,
-      "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
-      "nombre": "Eduardo ",
-      "precio": "1233"
-    },
-    {
-      "id": 1736503828920,
-      "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
-      "nombre": "Eduardo ",
-      "precio": "1233"
-    },
-    {
-      "id": 1736503828920,
-      "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
-      "nombre": "Eduardo ",
-      "precio": "1233"
-    },
-    {
-      "id": 1736503828923,
-      "imagen": "https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_200,w_300/balloons.jpg",
-      "nombre": "Eduardo ",
-      "precio": "1233"
+      "precio": "2500"
     }
   ]
 }

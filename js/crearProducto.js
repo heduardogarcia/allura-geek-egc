@@ -11,7 +11,7 @@ async function crearProducto(evento) {
   // console.log(imagen.files[0] ? URL.createObjectURL(imagen.files[0]) : "");
 
   const producto = {
-    id: Date.now(),
+    id: Date.now().toString(),
     imagen: imagen.value,
     nombre: nombre.value,
     precio: precio.value,

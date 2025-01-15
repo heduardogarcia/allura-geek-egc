@@ -147,19 +147,22 @@
 /* General styles for desktop devices */
 @media (min-width: 1025px) {
   .main {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 1rem;
   }
 
   .main__section--form {
     order: 2;
-    width: 35%;
+    width: 90%;
   }
 
   .main__section--catalog {
     order: 1;
-    width: 65%;
+    width: 90%;
   }
 
   .product-list {

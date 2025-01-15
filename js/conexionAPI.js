@@ -6,6 +6,16 @@ async function listarProductos() {
   return productos;
 }
 
+async function eliminarProducto(id) {
+  const conexion = await fetch(`http://localhost:3001/productos/${id}`, {
+    method: "DELETE",
+  });
+  const producto = await conexion.json();
+  console.log(producto);
+
+  return producto;
+}
+
 async function crearProducto(params) {
   const conexion = await fetch("http://localhost:3001/productos", {
     method: "POST",
@@ -23,4 +33,5 @@ async function crearProducto(params) {
 export const conexionAPI = {
   listarProductos,
   crearProducto,
+  eliminarProducto,
 };

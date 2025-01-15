@@ -6,6 +6,8 @@ function creadCard(registro) {
   const card = document.createElement("li");
   card.className = "product-card";
   card.innerHTML = `
+   <input type="hidden" name="product-id" value="${registro.id}" />
+        
           <img src="${registro.imagen}" alt="${registro.nombre}" class="product-card__image">
           <div class="product-card__details">
               <h3 class="product-card__title">${registro.nombre}</h3>
